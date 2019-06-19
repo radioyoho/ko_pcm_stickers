@@ -23,6 +23,9 @@ import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.lang.ref.WeakReference;
 
 public class StickerPackDetailsActivity extends AddStickerPackActivity {
@@ -52,10 +55,17 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity {
     private View divider;
     private WhiteListCheckAsyncTask whiteListCheckAsyncTask;
 
+    private AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sticker_pack_details);
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         boolean showUpButton = getIntent().getBooleanExtra(EXTRA_SHOW_UP_BUTTON, false);
         stickerPack = getIntent().getParcelableExtra(EXTRA_STICKER_PACK_DATA);
         TextView packNameTextView = findViewById(R.id.pack_name);

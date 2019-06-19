@@ -45,6 +45,9 @@ public class StickerPackListAdapter extends RecyclerView.Adapter<StickerPackList
         final Context context = viewGroup.getContext();
         final LayoutInflater layoutInflater = LayoutInflater.from(context);
         final View stickerPackRow = layoutInflater.inflate(R.layout.sticker_packs_list_item, viewGroup, false);
+
+        //here goes my baby
+
         return new StickerPackListItemViewHolder(stickerPackRow);
     }
 

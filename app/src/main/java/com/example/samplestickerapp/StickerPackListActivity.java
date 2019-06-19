@@ -20,6 +20,10 @@ import java.util.Arrays;
 import java.util.List;
 
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
+
 public class StickerPackListActivity extends AddStickerPackActivity {
     public static final String EXTRA_STICKER_PACK_LIST_DATA = "sticker_pack_list";
     private static final int STICKER_PREVIEW_DISPLAY_LIMIT = 5;
@@ -29,17 +33,25 @@ public class StickerPackListActivity extends AddStickerPackActivity {
     private WhiteListCheckAsyncTask whiteListCheckAsyncTask;
     private ArrayList<StickerPack> stickerPackList;
 
+
+    private AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sticker_pack_list);
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
         packRecyclerView = findViewById(R.id.sticker_pack_list);
         stickerPackList = getIntent().getParcelableArrayListExtra(EXTRA_STICKER_PACK_LIST_DATA);
         showStickerPackList(stickerPackList);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(getResources().getQuantityString(R.plurals.title_activity_sticker_packs_list, stickerPackList.size()));
         }
-
     }
 
     @Override

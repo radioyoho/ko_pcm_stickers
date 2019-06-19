@@ -94,6 +94,6 @@
         app:layout_constraintEnd_toStartOf="@id/add_button_on_list"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sticker_pack_info" />
-
+    
 
 </android.support.constraint.ConstraintLayout>

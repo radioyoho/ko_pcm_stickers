@@ -45,5 +45,8 @@
             android:enabled="true"
             android:exported="true"
             android:readPermission="com.whatsapp.sticker.READ" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9848346554073488~1379883987"/>
     </application>
 </manifest>

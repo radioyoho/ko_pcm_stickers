@@ -18,17 +18,25 @@ import android.util.Pair;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.MobileAds;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
+
+//mobile adds pack
+
 
 public class EntryActivity extends BaseActivity {
     private View progressBar;
     private LoadListAsyncTask loadListAsyncTask;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        MobileAds.initialize(this, "ca-app-pub-9848346554073488~1379883987");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entry);
+
         overridePendingTransition(0, 0);
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
@@ -36,6 +44,11 @@ public class EntryActivity extends BaseActivity {
         progressBar = findViewById(R.id.entry_activity_progress);
         loadListAsyncTask = new LoadListAsyncTask(this);
         loadListAsyncTask.execute();
+
+        //initialize Mobile Ads in the MAIN ACTIVITY which has the intent filter in the manifest
+
+
+
     }
 
     private void showStickerPack(ArrayList<StickerPack> stickerPackList) {

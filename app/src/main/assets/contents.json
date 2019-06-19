@@ -1,5 +1,5 @@
 {
-  "android_play_store_link": "",
+  "android_play_store_link": "https://play.google.com/store/apps/details?id=com.karaokulta.pcmstickerpack&hl=es",
   "ios_app_store_link": "",
   "sticker_packs": [
     {
@@ -7,8 +7,8 @@
       "name": "Bamboo",
       "publisher": "KaraOKulta",
       "tray_image_file": "tray_bamboo.png",
-      "publisher_email":"",
-      "publisher_website": "",
+      "publisher_email":"hola@karaokulta.com",
+      "publisher_website": "https://www.karaokulta.com/",
       "privacy_policy_website": "",
       "license_agreement_website": "",
       "stickers": [
@@ -49,8 +49,8 @@
       "name": "Beboop",
       "publisher": "KaraOKulta",
       "tray_image_file": "tray_beboop.png",
-      "publisher_email":"",
-      "publisher_website": "",
+      "publisher_email":"hola@karaokulta.com",
+      "publisher_website": "https://www.karaokulta.com/",
       "privacy_policy_website": "",
       "license_agreement_website": "",
       "stickers": [
@@ -91,8 +91,8 @@
       "name": "Jasper",
       "publisher": "KaraOKulta",
       "tray_image_file": "tray_jasper.png",
-      "publisher_email":"",
-      "publisher_website": "",
+      "publisher_email":"hola@karaokulta.com",
+      "publisher_website": "https://www.karaokulta.com/",
       "privacy_policy_website": "",
       "license_agreement_website": "",
       "stickers": [
@@ -133,8 +133,8 @@
       "name": "Pepo",
       "publisher": "KaraOKulta",
       "tray_image_file": "tray_pepo.png",
-      "publisher_email":"",
-      "publisher_website": "",
+      "publisher_email":"hola@karaokulta.com",
+      "publisher_website": "https://www.karaokulta.com/",
       "privacy_policy_website": "",
       "license_agreement_website": "",
       "stickers": [
@@ -175,8 +175,8 @@
       "name": "Violet",
       "publisher": "KaraOKulta",
       "tray_image_file": "tray_violet.png",
-      "publisher_email":"",
-      "publisher_website": "",
+      "publisher_email":"hola@karaokulta.com",
+      "publisher_website": "https://www.karaokulta.com/",
       "privacy_policy_website": "",
       "license_agreement_website": "",
       "stickers": [
@@ -217,8 +217,8 @@
       "name": "Zoii",
       "publisher": "KaraOKulta",
       "tray_image_file": "tray_zoii.png",
-      "publisher_email":"",
-      "publisher_website": "",
+      "publisher_email":"hola@karaokulta.com",
+      "publisher_website": "https://www.karaokulta.com/",
       "privacy_policy_website": "",
       "license_agreement_website": "",
       "stickers": [
